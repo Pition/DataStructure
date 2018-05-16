@@ -1,8 +1,8 @@
 public class Sunday{
 	public static void main(String[] args) {
-		String a = "You have to believe it";	//主串
+		String a = "believe";	//主串
 		String b = "lie";			//模式串
-		System.out.println(sundayMatch(a, b));	// -1表示不匹配
+		System.out.println(sundayMatch(a, b));	// -1表示不匹配，正数表示模式串在主串中第一次出现的位置
 	}
 	
 	static int sundayMatch(String s, String p) {
