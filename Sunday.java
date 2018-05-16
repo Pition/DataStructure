@@ -1,32 +1,32 @@
-public class Sunday {
+public class Sunday{
 	public static void main(String[] args) {
-		String a = "make American great again!";
-		String b = "t again!";
-		System.out.println(sundayMatch(a, b));
+		String a = "You have to believe it";	//主串
+		String b = "lie";			//模式串
+		System.out.println(sundayMatch(a, b));	// -1表示不匹配
 	}
 	
-	static int sundayMatch(String matched_str, String match_str) {
+	static int sundayMatch(String s, String p) {
 		int i = 0, j = 0;
-		int md_len = matched_str.length();
-		int m_len = match_str.length();
+		int s_len = s.length();
+		int p_len = p.length();
 		int rear;
 		while(true) {
 			i = 0;
-			while(matched_str.charAt(j)==match_str.charAt(i)) {
+			while(s.charAt(j)==p.charAt(i)) {
 				i++;
 				j++;
-				if(i>=m_len) {
+				if(i>=p_len) {
 					return j-i+1;
 				}
-				if(j>=md_len) {
+				if(j>=s_len) {
 					return -1;
 				}
 			}
-			rear = j - i + m_len;
+			rear = j - i + p_len;
 			j = rear + 1;
-			for(i=1;i<m_len;i++) {
-				if(match_str.charAt(m_len - i) == matched_str.charAt(rear)) {
-					j = rear - m_len + i;
+			for(i=1;i<p_len;i++) {
+				if(p.charAt(p_len - i) == s.charAt(rear)) {
+					j = rear - p_len + i;
 					break;
 				}
 			}
