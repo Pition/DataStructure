@@ -1,8 +1,8 @@
 public class Sunday{
 	public static void main(String[] args) {
-		String a = "believe";	//Ö÷´®
-		String b = "lie";			//Ä£Ê½´®
-		System.out.println(sundayMatch(a, b));	// -1±íÊ¾²»Æ¥Åä£¬ÕıÊı±íÊ¾Ä£Ê½´®ÔÚÖ÷´®ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ
+		String a = "believe";			//ä¸»ä¸²
+		String b = "lie";			//æ¨¡å¼ä¸²
+		System.out.println(sundayMatch(a, b));	// -1è¡¨ç¤ºä¸åŒ¹é…ï¼Œæ­£æ•°è¡¨ç¤ºæ¨¡å¼ä¸²åœ¨ä¸»ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®
 	}
 	
 	static int sundayMatch(String s, String p) {
