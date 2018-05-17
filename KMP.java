@@ -8,7 +8,7 @@ public class KMP {
 	public static int nextIndex(String s) {
 		int i;
 		int max = 1;
-		for(i=1;i<s.length()-1;i++) {
+		for(i=1;i<s.length()-1; i++) {
 			if(s.substring(0, i).equals(s.substring(s.length()-i))) {
 				max = i+1;
 			}
