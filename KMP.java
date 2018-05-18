@@ -25,7 +25,7 @@ public class KMP {
 	/**
 	 * @param s	sub string
 	 * @param p	main string
-	 * @return the starting position of the first occurrence of sub string within pattern string
+	 * @return the starting position of the first occurrence of pattern string within main string
 	 */
 	public static int stringMatch(String s, String p) {
 		int s_len = s.length();
