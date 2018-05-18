@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class KMP {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		System.out.println("请输入主串：");
+		String main_string = scan.nextLine();
 		System.out.println("请输入模式串：");
 		String pattern_string = scan.nextLine();
-		System.out.println("请输入子串：");
-		String sub_string = scan.nextLine();
-		System.out.println(stringMatch(sub_string,pattern_string));
+		System.out.println(stringMatch(pattern_string,main_string));
 		scan.close();
 	}
 	
@@ -24,7 +24,7 @@ public class KMP {
 	
 	/**
 	 * @param s	sub string
-	 * @param p	pattern string
+	 * @param p	main string
 	 * @return the starting position of the first occurrence of sub string within pattern string
 	 */
 	public static int stringMatch(String s, String p) {
